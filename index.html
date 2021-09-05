@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- coustom css -->
     <style>
-        #loader {
-    background: #000 url(home-img/1.gif) no-repeat center center;
+        #loade {
+    background: #000 url(img/1.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
 /*     position: fixed; */
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-        <div id="loader"></div>
+        <div id="loade"></div>
 
     <!-- =============================== Start Header Section ==================================== -->
     <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-danger">
@@ -508,6 +508,9 @@
     <!-- main js -------------------------------->
     <script src="main.js">
     </script>
+    <script> var loader = document.getElementById("loade");
+        window.addEventListener("load" , function(){
+            loade.style.display = "none" })
 </body>
 
 </html>
