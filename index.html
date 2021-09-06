@@ -18,18 +18,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- coustom css -->
     <style>
-        #loade {
-    background: #000 url(img/1.gif) no-repeat center center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-     z-index:100;
+    #loader {
+      width: 100%;
+      height: 100vh;
+      background: #fff
+        url("https://flevix.com/wp-content/uploads/2019/07/Bar-Preloader-1.gif")
+        no-repeat center center;
+      position: fixed;
+      z-index: 99999;
     }
     </style>
 </head>
 
-<body>
-        <div id="loade"></div>
+<body onload=myfunction()>
+        <div id="loader"></div>
 
     <!-- =============================== Start Header Section ==================================== -->
     <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-danger">
@@ -509,9 +511,11 @@
     <!-- main js -------------------------------->
     <script src="main.js">
     </script>
-    <script> var loader = document.getElementById("loade");
-        window.addEventListener("load" , function(){
-            loade.style.display = "none" })
+    <script>
+        var preloder= document.getElementById("loader")
+           function myFunction(){
+          preloder.style.display = "none"
+    }
     </script>
 </body>
 
